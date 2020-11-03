@@ -10,24 +10,63 @@
 
 <body>
     <section>
-        <h2 class="title-example">Array</h2>
-        <p class="short-desc">
-            All of the array methods for lodash will impact an array.</p>
+        <h1 class="title-example">Array</h1>
+        <p class="short-desc"> The following methods will be applicable to arrays.</p>
 
         <div class="wrapper-example">
 
-            <h2>_.chunk(array, [size=1])</h2>
+            <h2>For example: _.chunk(array, [size=1]</h2>
             <p class="method-desc">
                 Creates an array of elements split into groups the length of size. If array can't be split evenly, the
                 final chunk will be the remaining elements.
             </p>
             <blockquote>
                 let arr = [1, 2, 3, 4];
-                let chunked = _.chunk(arr, 2);
-                <br>
+                <br>let chunked = _.chunk(arr, 2);
+                <br>chunked returns == (2) [Array(2), Array(2)];
             </blockquote>
         </div>
+
+        <div class="wrapper-example">
+
+            <h2>Do it yourself</h2>
+            <p class="method-desc">
+                Here is an array of number:</p>
+            <blockquote id="array-number"></blockquote>
+
+            <p class="method-desc">
+                And a second one if need:</p>
+            <blockquote id="array-number-2"></blockquote>
+
+
+            <!--             <p class="method-desc">
+                But where it works best - on objects:</p>
+            <blockquote id="array-number-3">
+                let users = [
+                <br>{ 'user': 'barney', 'active': true },
+                <br>{ 'user': 'fred', 'active': false },
+                <br>{ 'user': 'pebbles', 'active': false }
+                <br>];
+            </blockquote> -->
+
+            <form action="">
+                <label for="array-number-method">What do you need to do to it:</label>
+                <select id="array-number-method" name="array-number-method">
+                    <option value=""></option>
+
+                </select>
+            </form>
+            <h3>What will happen ?</h3>
+            <blockquote id="chosen-method"></blockquote>
+            <p id="method-p"></p>
+
+            <h3> Result</h3>
+            <blockquote id="actual-result"></blockquote>
+        </div>
+
+
     </section>
+    <script type="module" src="https://apis.google.com/js/api.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/lodash@4.17.20/lodash.min.js"></script>
     <script src="script.js"></script>
 </body>
