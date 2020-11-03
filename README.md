@@ -35,12 +35,34 @@ programming with strings, numbers, arrays, functions and objects (everything you
 
 First of all, install Lodash: 
 
+You can easily add a link to your HTML: [link to the script:src](https://www.jsdelivr.com/package/npm/lodash)
+><script src="https://cdn.jsdelivr.net/npm/lodash@4.17.20/lodash.min.js"></script>
+
+Or you can go through your terminal:
+
 ```
 $ npm i -g npm
 $ npm i --save lodash
 
 ```
+add in Node.js: 
 
+```
+// Load the full build.
+var _ = require('lodash');
+// Load the core build.
+var _ = require('lodash/core');
+// Load the FP build for immutable auto-curried iteratee-first data-last methods.
+var fp = require('lodash/fp');
+ 
+// Load method categories.
+var array = require('lodash/array');
+var object = require('lodash/fp/object');
+ 
+// Cherry-pick methods for smaller browserify/rollup/webpack bundles.
+var at = require('lodash/at');
+var curryN = require('lodash/fp/curryN');
+```
 Then learn all of the functions you can use with Lodash!
 *... seriously?* 
 Yes! Find a library of the Lodash functions and browse throught it. What you need to remember is that lodash is most useful with arrays. 

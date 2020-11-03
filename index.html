@@ -1,11 +1,35 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Lodash library</title>
+    <link rel="stylesheet" href="style.css">
 </head>
+
 <body>
-    
+    <section>
+        <h2 class="title-example">Array</h2>
+        <p class="short-desc">
+            All of the array methods for lodash will impact an array.</p>
+
+        <div class="wrapper-example">
+
+            <h2>_.chunk(array, [size=1])</h2>
+            <p class="method-desc">
+                Creates an array of elements split into groups the length of size. If array can't be split evenly, the
+                final chunk will be the remaining elements.
+            </p>
+            <blockquote>
+                let arr = [1, 2, 3, 4];
+                let chunked = _.chunk(arr, 2);
+                <br>
+            </blockquote>
+        </div>
+    </section>
+    <script src="https://cdn.jsdelivr.net/npm/lodash@4.17.20/lodash.min.js"></script>
+    <script src="script.js"></script>
 </body>
+
 </html>
