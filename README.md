@@ -76,4 +76,4 @@ That's ok, the documentation for Lodash has a search function!
 ## So why is this a Github rep?
 
 I'll show you the world! Let's try to see a few practical examples!
-
+[look at that page](https://harveythepooka404.github.io/module-tutorial/)
